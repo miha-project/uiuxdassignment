@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/?size=100&id=G9XXzb9XaEKX&format=png&color=000000"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="main-container">
+        <nav class="item">
+            <div class="logo" title="Spotify"></div>
+            <div class="search-field">
+                <div class="home-ico" title="Home">
+                    <img src="photos\home_icon.png" width="20px" height="20px" />
+                </div>
+                <div class="search-area">
+                    <div class="s1-logo">
+                        <img src="photos/search_icon.png" width="25px" height="25px" alt="">
+                    </div>
+                    <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="What do you want to play?"
+                    />
+                    <div class="s3-logo">
+                        <img src="photos/search_icon3.png" height="25px" alt=""/>
+                    </div>
+                    <div class="s2-logo">
+                        <img src="photos\search_icon_2.png" width="25px" height="25px" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="register">
+                <div class="sign-up">Sign up</div>
+                <div class="login">Log in</div>
+            </div>
+        </nav>
+        <div class="sidebar item">
+            <div class="library">
+                <div class="lib-left">
+                    <img src="photos/library_icon.png" alt="" />Your Library
+                </div>
+                <div class="lib-right"><img src="photos/add_library.png" alt="" /></div>
+            </div>
+            <div class="box-content">
+                <div class="title">Create your first playlist</div>
+                <div class="content">It's easy, we'll help you</div>
+                <button>Create playlist</button>
+            </div>
+            <div class="box-content">
+                <div class="title">Let's find some podcasts to follow</div>
+                <div class="content">We'll keep you updated on new episodes</div>
+                <button>Browse Podcasts</button>
+            </div>
+            <div class="policy-area">
+                <span>Legal</span><span>Safety & Privacy Center</span>
+                <span>Privacy Policy</span><span>Cookies</span><span>About Ads</span>
+                <span>Accessibility</span>
+            </div>
+            <span id="cookies">Cookies</span>
+            <div class="lang-btn">
+                <img src="photos/language_icon.png" alt="" />English
+            </div>
+        </div>
+        <div class="main-section item">
+            <div class="artist-head">
+                <h3>Popular artists</h3>
+                <span>Show all</span>
+            </div>
+            <div class="artist-container">
+                <div class="artist-card">
+                    <img src="photos/artist_01.png" alt="" />
+                    <div class="artist-name">Anirudh Ravichander</div>
+                    <div class="type">Artist</div>
+                </div>
+                <div class="artist-card">
+                    <img src="photos/artist_02.png" alt="" />
+                    <div class="artist-name">DILU Beats</div>
+                    <div class="type">Artist</div>
+                </div>
+                <div class="artist-card">
+                    <img src="photos/artist_03.png" alt="" />
+                    <div class="artist-name">Dinesh Gamage</div>
+                    <div class="type">Artist</div>
+                </div>
+                <div class="artist-card">
+                    <img src="photos/artist_04.png" alt="" />
+                    <div class="artist-name">A.R. Rahman</div>
+                    <div class="type">Artist</div>
+                </div>
+                <div class="artist-card">
+                    <img src="photos/artist_05.png" alt="" />
+                    <div class="artist-name">Yasas Medagedara</div>
+                    <div class="type">Artist</div>
+                </div>
+                <div class="artist-card">
+                    <img src="photos/artist_06.png" alt="" />
+                    <div class="artist-name">Dhyan Hewage</div>
+                    <div class="type">Artist</div>
+                </div>
+            </div>
+            <div class="album-head">
+                <h3>Popular albums and singles</h3>
+                <span>Show all</span>
+            </div>
+            <div class="artist-container">
+                <div class="artist-card" id="album-card">
+                    <img src="photos/alb1.png" alt="" id="album-art" />
+                    <div class="artist-name">Iraj</div>
+                    <div class="type">Iraj</div>
+                </div>
+                <div class="artist-card" id="album-card">
+                    <img src="photos/alb2.png" alt="" id="album-art" />
+                    <div class="artist-name">Gold</div>
+                    <div class="type">La Signore</div>
+                </div>
+                <div class="artist-card" id="album-card">
+                    <img src="photos/alb3.png" alt="" id="album-art" />
+                    <div class="artist-name">Die With A Smile</div>
+                    <div class="type">Lady Gaga, Bruno Mars</div>
+                </div>
+                <div class="artist-card" id="album-card">
+                    <img src="photos/alb4.png" alt="" id="album-art" />
+                    <div class="artist-name">Ridma Weerawardena</div>
+                    <div class="type">Ridma Weerawardena</div>
+                </div>
+                <div class="artist-card" id="album-card">
+                    <img src="photos/alb5.png" alt="" id="album-art" />
+                    <div class="artist-name">Ma Diha</div>
+                    <div class="type">DILU Beats</div>
+                </div>
+                <div class="artist-card" id="album-card">
+                    <img src="photos/alb6.png" alt="" id="album-art" />
+                    <div class="artist-name">Golden</div>
+                    <div class="type">Jung Kook</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            We and <span>our partners</span> use cookies to personalize your experience, to show
+            you ads based on your interests, and for measurement and analytics
+            purposes. By using our website and services, you agree to our use of
+            cookies as described in our <span>Cookie Policy</span>.
+        </div>
+        <i  style="color: #6f6f6f"></i>
+    </footer>
+</body>
+</html>

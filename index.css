@@ -1,0 +1,551 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --btn-color:#1DB954;
+    --btn-bg-color: #14833B;
+}
+
+body{
+    background-color: #191414;
+    color: #ffffff;
+    font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-container{
+    margin: 8px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(222, 221, 221); 
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+}
+
+.logo{
+    background-image: url(photos/social.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.search-field{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.register{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.home-ico{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-color: #343232;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343232;
+    width: 450px;
+    height: 40px;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.search-area input{
+    background-color: transparent;
+    outline: none;
+    caret-color: white;
+    width: 70%;
+    color: white;
+}
+
+.s1-logo, .s2-logo, .s3-logo{
+    cursor: pointer;
+}
+
+.sign-up{
+    font-weight: bold;
+    color: #bab9b9;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.sign-up:hover{
+    color: white;
+}
+
+.login{
+    width: 100px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 40px;
+}
+
+.login:hover{
+    height: 42px;
+}
+
+.sidebar{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    background-color: #201f1f;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    height: 80vh;
+}
+
+.library{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 10px;
+    color: #7d7d7d;
+    font-weight: bold;
+}
+
+.lib-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.lib-left:hover{
+    filter: brightness(0) invert(1);
+}
+
+.lib-right{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.lib-right:hover{
+    filter: brightness(0) invert(1);
+}
+
+.box-content{
+    background-color: #343232;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.box-content div{
+    margin-bottom: 5px;
+}
+
+.box-content .title{
+    font-weight: bold;
+}
+
+.box-content .content{
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+
+.box-content button{
+    margin-bottom: 8px;
+}
+
+.policy-area{
+    margin-top: 2.5rem;
+    font-size: 0.7rem;
+    color: #c1c1c1;
+    width: 80%;
+    margin-left: 8px;
+}
+
+.policy-area span{
+    cursor: pointer;
+    margin-right: 12px;
+    line-height: 30px;
+}
+
+#cookies{
+    margin-left: 8px;
+    font-size: 1.0rem;
+    line-height: 40px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#cookies:hover{
+    text-decoration: underline;
+}
+
+.lang-btn{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white 1px solid;
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 2px;
+    padding: 5px 0; 
+    cursor: pointer;
+}
+
+.lang-btn img{
+    width: 25px;
+    height: 25px;
+}
+
+.lang-btn:hover{
+    border: white 2px solid;
+}
+
+.main-section{
+    background-color: #201f1f;
+    position: absolute;
+    left: 31%;
+    top: 68px;
+    right: 0;
+    width: 68%;
+    height: 80vh;
+    border-radius: 10px;
+}
+
+.artist-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.artist-head span{
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.artist-head h3{
+    cursor: pointer;
+}
+
+.artist-head h3:hover{
+    text-decoration: underline;
+}
+
+.artist-head span:hover{
+    text-decoration: underline;
+}
+
+.artist-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.artist-card{
+    width: 16%;
+    font-size: small;
+    cursor: pointer;
+    padding: 5px 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.artist-card .artist-name{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.artist-card .artist-name:hover{
+    text-decoration: underline;
+}
+
+.artist-card .type{
+    color: rgb(170, 170, 170);
+    align-self: flex-start;
+}
+
+.artist-card:hover{
+    background-color: rgb(39, 39, 39);
+}
+
+.album-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.album-head span{
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.album-head h3{
+    cursor: pointer;
+}
+
+.album-head h3:hover{
+    text-decoration: underline;
+}
+
+.album-head span:hover{
+    text-decoration: underline;
+}
+
+#album-art{
+    border-radius: 10px;
+}
+
+#album-card{
+    height: 50%;
+}
+
+#album-card .artist-name{
+    width: 100%;
+    height: 15px;
+    overflow: hidden;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 5px 16px;
+    width: 100%;
+    position: absolute;
+    margin-top: auto;
+}
+
+footer div{
+    font-size: 0.9rem;
+    width: 70%;
+}
+
+footer span{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+footer i{
+    cursor: pointer;
+}
+
+footer i:hover{
+    filter: brightness(0) invert(0);
+}
+
+@media (max-width: 1115px){
+    .artist-card img{
+        width: 100px;
+        height: 100px;
+    }
+    footer{
+        display: none;
+    }
+}
+
+@media (max-width: 1005px){
+    .sidebar{
+        height: 150%;
+    }
+
+    .main-section{
+        height: 150%;
+    }
+
+    .artist-card{
+        width: 30%;
+    }
+
+    .artist-card img{
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media(max-width: 780px){
+    .search-area{
+        width: 300px;
+    }
+
+    .artist-card{
+        width: 30%;
+    }
+
+    .artist-card img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media(max-width: 640px){
+    .search-area{
+        width: 260px;
+    }
+}
+
+@media(max-width: 585px){
+    .search-area{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .search-area input, .s2-logo, .s3-logo{
+        display: none;
+        visibility: hidden;
+    }
+
+    .s1-logo img{
+        width: 20px;
+        height: 20px;
+        transform: translateX(-4px);
+    }
+    
+    .search-field{
+        transform: translateX(-30px);
+    }
+}
+
+@media(max-width: 503px){
+    .sidebar{
+        width: 100%;
+        height: 540px;
+    }
+
+    .main-section{
+        top: 620px;
+        left: 8px;
+        width: 96%;
+        height: 890px;
+    }
+}
+
+@media(max-width: 430px){
+    .search-field{
+        transform: translateX(0px);
+    }
+}
+
+@media(max-width: 370px){
+    .logo{
+        width: 30px;
+        height: 30px;
+    }
+    .home-ico{
+        width: 30px;
+        height: 30px;
+    }
+    .home-ico img{
+        width: 15px;
+        height: 15px;
+    }
+    .search-area{
+        width: 30px;
+        height: 30px;
+    }
+    .s1-logo img{
+        width: 15px;
+        height: 15px;
+        transform: translateX(-7px);
+    }
+
+    .register{
+        gap: 15px;
+    }
+    .sign-up{
+        font-size: 0.8rem;
+    }
+    .login{
+        height: 34px;
+        font-size: 0.8rem;
+    }
+    .login:hover{
+        height: 36px;
+    }
+    .policy-area {
+        margin-top: 1rem;
+    }
+    .artist-head h3, .album-head h3{
+        font-size: 0.8rem;
+    }
+    .artist-head span, .album-head span{
+        font-size: 0.6rem;
+    }
+    .artist-card img{
+        width: 80px;
+        height: 80px;
+    }
+}
